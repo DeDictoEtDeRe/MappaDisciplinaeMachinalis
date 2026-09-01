@@ -1,0 +1,50 @@
+Sectio Primum: 
+Titulus: The evidence of commitere(yet in classical latin it should be mutare)
+Pars Tempi: 2026-09-01 08:08:1788223186
+Pars sensu lato ut Simile Capitis Ciceroni sit: 
+	>>Command: python hello_data.py 
+	(DerVersuch) [DeDictoVelDeRe@MSINB MappaDisciplinaeMachinalis]$ git push origin main
+	Username for 'https://github.com': DEDictoEtDeRe
+	Password for 'https://DEDictoEtDeRe@github.com':
+	remote: Permission to DeDictoEtDeRe/MappaDisciplinaeMachinalis.git denied to DeDictoEtDeRe.
+	fatal: unable to access 'https://github.com/DeDictoEtDeRe/MappaDisciplinaeMachinalis/': The requested URL returned error: 403
+	(DerVersuch) [DeDictoVelDeRe@MSINB MappaDisciplinaeMachinalis]$ git push origin main
+	Username for 'https://github.com': DeDictoEtDeRe
+	Password for 'https://DeDictoEtDeRe@github.com':
+	Enumerating objects: 8, done.
+	Counting objects: 100% (8/8), done.
+	Delta compression using up to 8 threads
+	Compressing objects: 100% (7/7), done.
+	Writing objects: 100% (7/7), 948.42 KiB | 5.64 MiB/s, done.
+	Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+	To https://github.com/DeDictoEtDeRe/MappaDisciplinaeMachinalis
+	   a18f67e..8e66525  main -> main
+Pars defectum Cython continenes:
+	Python 3.14.7 (main, Aug 10 2026, 07:46:56) [GCC 16.1.1 20260728] on linux
+	Type "help", "copyright", "credits" or "license" for more information.
+	>>> import Hello_data_accelerated
+	Traceback (most recent call last):
+	  File "<python-input-0>", line 1, in <module>
+	    import Hello_data_accelerated
+	ModuleNotFoundError: No module named 'Hello_data_accelerated'
+	>>> import hello_data_accelerated
+	>>> hello_data_accelerated.run_cython_accelerated()
+	Traceback (most recent call last):
+	  File "<python-input-2>", line 1, in <module>
+	    hello_data_accelerated.run_cython_accelerated()
+	    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+	  File "hello_data_accelerated.pyx", line 9, in hello_data_accelerated.run_cython_accelerated
+	    cdef long[:] score_view=scores['score'].values
+	  File "View.MemoryView", line 673, in View.MemoryView.memoryview_cwrapper
+	  File "View.MemoryView", line 360, in View.MemoryView.memoryview.__cinit__
+	ValueError: buffer source array is read-only
+diagnosis of the defectum:
+	It might be the complication of Numpy ,which needs time to inspect
+Sectio Secundum:
+	Titilus: the current understanding of virtualenv and github
+	Venv:
+		If sans the virtual environment, one operates python under single library while the python is a script heavily dependent on the different versions of python and their corresponding syntax, und syntax sugar and paradigm of coding. In order to achieve isolation, the concept virtual environment provides the namespace narrowing in the sense of kernel programming. It allows the project to remain in the boundary of appropriate packages and the version of python. 
+	Github and git: 
+		Github provides interface to manage your own account of repository and the worldwide decentralized services to peak into how others differ from your coding habits and what you can apprehend thence. Git is a free and open source version control tool developed mainly by Linus torvald and those we have to send sincere gratitude. It's a complicated program to maintain the patch and codebase while allowing control of divergence(branch) and convergence(merge). It is the different paradigm compared ot aye day's subversion, the centralized control of versions.
+	
+
